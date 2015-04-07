@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7528.3" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7518.3"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AdaptiveChartDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Z8i-68-VOX" userLabel="Apple Image View">
+                                <rect key="frame" x="10" y="240" width="138" height="120"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="VfQ-lG-zEa"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fE1-td-qiC" userLabel="China Image View">
+                                <rect key="frame" x="158" y="240" width="137" height="120"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Kc7-zC-1kz" userLabel="World Image View">
+                                <rect key="frame" x="305" y="240" width="138" height="120"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MtI-rK-jcD" userLabel="Internet Image View">
+                                <rect key="frame" x="453" y="240" width="137" height="120"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.87432086760000005" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="MtI-rK-jcD" firstAttribute="width" secondItem="Kc7-zC-1kz" secondAttribute="width" id="0bc-pZ-wWc"/>
+                            <constraint firstItem="Z8i-68-VOX" firstAttribute="width" secondItem="fE1-td-qiC" secondAttribute="width" id="5Ww-iN-VbV"/>
+                            <constraint firstItem="MtI-rK-jcD" firstAttribute="height" secondItem="Kc7-zC-1kz" secondAttribute="height" id="5rH-VN-3wg"/>
+                            <constraint firstItem="Z8i-68-VOX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="JYY-mK-eEx"/>
+                            <constraint firstItem="fE1-td-qiC" firstAttribute="width" secondItem="Kc7-zC-1kz" secondAttribute="width" id="PjO-cK-vmH"/>
+                            <constraint firstItem="fE1-td-qiC" firstAttribute="height" secondItem="Kc7-zC-1kz" secondAttribute="height" id="T5U-a2-8Ua"/>
+                            <constraint firstItem="fE1-td-qiC" firstAttribute="centerY" secondItem="Kc7-zC-1kz" secondAttribute="centerY" id="USi-Jt-23H"/>
+                            <constraint firstItem="Kc7-zC-1kz" firstAttribute="leading" secondItem="fE1-td-qiC" secondAttribute="trailing" constant="10" id="ZhU-zH-h4k"/>
+                            <constraint firstItem="MtI-rK-jcD" firstAttribute="centerY" secondItem="Kc7-zC-1kz" secondAttribute="centerY" id="a9h-IZ-OCM"/>
+                            <constraint firstItem="Z8i-68-VOX" firstAttribute="height" secondItem="fE1-td-qiC" secondAttribute="height" id="eUZ-sm-iPc"/>
+                            <constraint firstAttribute="trailing" secondItem="MtI-rK-jcD" secondAttribute="trailing" constant="10" id="gsG-Gh-mDx"/>
+                            <constraint firstAttribute="centerY" secondItem="Z8i-68-VOX" secondAttribute="centerY" id="h5b-Qp-hXt"/>
+                            <constraint firstItem="fE1-td-qiC" firstAttribute="leading" secondItem="Z8i-68-VOX" secondAttribute="trailing" constant="10" id="h6l-ub-6gs"/>
+                            <constraint firstItem="Z8i-68-VOX" firstAttribute="centerY" secondItem="fE1-td-qiC" secondAttribute="centerY" id="k7q-Fi-PEm"/>
+                            <constraint firstItem="MtI-rK-jcD" firstAttribute="leading" secondItem="Kc7-zC-1kz" secondAttribute="trailing" constant="10" id="zxa-x9-6iY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="appleImageView" destination="Z8i-68-VOX" id="le1-XQ-jeu"/>
+                        <outlet property="chinaImageView" destination="fE1-td-qiC" id="2sg-uk-tXs"/>
+                        <outlet property="internetImageView" destination="MtI-rK-jcD" id="L83-9e-VQ6"/>
+                        <outlet property="worldImageView" destination="Kc7-zC-1kz" id="KEK-6O-3Ch"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
